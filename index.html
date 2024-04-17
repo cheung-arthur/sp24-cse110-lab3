@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Minutes Page</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <header>
+        <h1>Very Important Meeting Minutes for Very Important Company doing Important Things</h1>
+        <h2>Topic: Brainstorming</h2>
+        <h3>Date: April 16, 2024</h3>
+        
+    </header>
+    <nav>
+        <a href="#attendance">Attendance</a> |
+        <a href="#agenda">Agenda</a> |
+        <a href="#actions">Action Items</a>
+    </nav>
+    <main>
+        <section id="attendance">
+            <h2>Attendance List</h2>
+            <ul>
+                <li>Lebron James</li>
+                <li>Barack Obama</li>
+                <li>Professor Powell</li>
+                <li>Arthur Cheung</li>
+                <li>Mr. Beast</li>
+                <li>Elon Musk</li>
+                <li>Kanye West</li>
+            </ul>
+        </section>
+        <section id="agenda">
+            <h2>Agenda</h2>
+            <ol>
+                <li>Review of last meeting's action items</li>
+                <li>Discussion of new features and customer responses</li>
+                <li>Brainstorming session for improvement</li>
+            </ol>
+        </section>
+        <section id="actions">
+            <h2>New Business/Upcoming Action Items</h2>
+            <ul>
+                <li>Assign development tasks</li>
+                <li>Set next meeting date</li>
+                <li>Polish <i>prototype for testing</i></li>
+            </ul>
+        </section>
+        <div>
+            <p><strong>Summary:</strong> Today we discussed possibilites for the new features of our <b>very important app.</b></p>
+            <p><strong>Unfinished Business from Last Week:</strong>None. All bases covered!</p>
+            <p>Whiteboard of Brainstorming</p>
+        </div>
+        <img src="whiteboard.jpg" alt="Whiteboard with diagrams from the meeting">
+        <hr>
+        <details>
+            <summary><b>Meeting Notes</b></summary>
+            <span>
+                <p>We opened the meeting by reviewing the progress on the <em>current action items</em>. After some discussion, we moved on to reviewing <em>customer responses</em> on our prototype to see what we could improve. </p>
+                <p>Lebron suggested the idea of *insert brilliant idea here* </p>
+                <p>Miscelleanous comments:</p>
+                <ul>
+                    <li>Elon: He needed to use the restroom</li>
+                    <li>Lebron: He needs to come late to the next meeting because of a game</li>
+                </ul>
+            </span>
+        </details>
+        <h4>Meeting Audio</h4>
+        <audio controls>
+            
+            <source src="meeting_audio.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <br>
+        <h4>Meeting Video</h4>
+        <video controls>
+            <source src="meeting_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <br>
+        <br>
+    </main>
+    <form>
+        <fieldset>
+            <legend>Feedback</legend>
+            <label for="suggestion">Your suggestion:</label>
+            <textarea id="suggestion" name="suggestion" rows="4" cols="50"></textarea>
+            <input type="checkbox" id="urgent" name="urgent">
+            <label for="urgent">Urgent</label>
+            <input type="radio" id="feature" name="feedback_type" value="feature">
+            <label for="feature">Feature Request</label>
+            <input type="radio" id="bug" name="feedback_type" value="bug">
+            <label for="bug">Bug Report</label>
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="date" name="date">
+            <input name="written-by" list="stakeholders">
+            <label for="category-input">Written By:</label>
+            <input type="text" id="category-input" name="category" list="stakeholder-list" placeholder="Choose a category">
+            <datalist id="stakeholder-list">
+                <option value="Developer">
+                <option value="Designer">
+                <option value="Client">
+                <option value="Other">
+            </datalist>
+            <select name="category">
+                <option value="interface">Interface</option>
+                <option value="performance">Performance</option>
+                <option value="enhancement">Enhancement</option>
+            </select>
+            
+            <button type="submit">Submit Feedback</button>
+        </fieldset>
+    </form>
+
+    <footer>
+        <p>Contact us at <a href="mailto:kac019@ucsd.edu">Very Important Company</a></p>
+    </footer>
+</body>
+</html>
