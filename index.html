@@ -12,7 +12,6 @@
         <h1>Very Important Meeting Minutes for Very Important Company doing Important Things</h1>
         <h2>Topic: Brainstorming</h2>
         <h3>Date: April 16, 2024</h3>
-        
     </header>
     <nav>
         <a href="#attendance">Attendance</a> |
@@ -49,27 +48,26 @@
             </ul>
         </section>
         <div>
-            <p><strong>Summary:</strong> Today we discussed possibilites for the new features of our <b>very important app.</b></p>
-            <p><strong>Unfinished Business from Last Week:</strong>None. All bases covered!</p>
+            <p><strong>Summary:</strong> Today we discussed possibilities for the new features of our <b>very important app.</b></p>
+            <p><strong>Unfinished Business from Last Week:</strong> None. All bases covered!</p>
             <p><strong>Whiteboard of Brainstorming:</strong></p>
         </div>
         <img src="media/whiteboard.jpg" alt="Whiteboard with diagrams from the meeting">
         <hr>
         <details>
             <summary><b>Meeting Notes</b></summary>
-            <span>
-                <p>We opened the meeting by reviewing the progress on the <em>current action items</em>. After some discussion, we moved on to reviewing <em>customer responses</em> on our prototype to see what we could improve. </p>
-                <p>Lebron suggested the idea of *insert brilliant idea here* </p>
-                <p>Miscelleanous comments:</p>
+            <div>
+                <p>We opened the meeting by reviewing the progress on the <em>current action items</em>. After some discussion, we moved on to reviewing <em>customer responses</em> on our prototype to see what we could improve.</p>
+                <p>Lebron suggested the idea of *insert brilliant idea here*.</p>
+                <p>Miscellaneous comments:</p>
                 <ul>
-                    <li>Elon: He needed to use the restroom</li>
-                    <li>Lebron: He needs to come late to the next meeting because of a game</li>
+                    <li>Elon: He needed to use the restroom.</li>
+                    <li>Lebron: He needs to come late to the next meeting because of a game.</li>
                 </ul>
-            </span>
+            </div>
         </details>
         <h4>Meeting Audio</h4>
         <audio controls>
-            
             <source src="media/meeting_audio.mp3" type="audio/mp3">
             Your browser does not support the audio element.
         </audio>
@@ -95,14 +93,14 @@
             <label for="bug">Bug Report</label>
             <input type="text" name="name" placeholder="Your Name">
             <input type="date" name="date">
-            <input name="written-by" list="stakeholders">
+            <input list="stakeholder-list" name="written-by">
             <label for="category-input">Written By:</label>
             <input type="text" id="category-input" name="category" list="stakeholder-list" placeholder="Choose a category">
             <datalist id="stakeholder-list">
-                <option value="Developer">
-                <option value="Designer">
-                <option value="Client">
-                <option value="Other">
+                <option value="Developer"></option>
+                <option value="Designer"></option>
+                <option value="Client"></option>
+                <option value="Other"></option>
             </datalist>
             <select name="category">
                 <option value="interface">Interface</option>
@@ -113,7 +111,6 @@
             <button type="submit">Submit Feedback</button>
         </fieldset>
     </form>
-
     <footer>
         <p>Contact us at <a href="mailto:kac019@ucsd.edu">Very Important Company</a></p>
     </footer>
