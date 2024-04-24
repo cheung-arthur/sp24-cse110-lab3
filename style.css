@@ -50,16 +50,6 @@
 
 
 /* ID selector */
-#meeting-title{
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    color:#2c2e2c;
-    text-align:center;
-    font-size: 50px;
-
-}
 
 /* Universal selector */
 *{
@@ -81,11 +71,11 @@ header{
     position: sticky;
     z-index: 100000; 
     top:0;
-    background-color:#ccffff ;
+    background-color:#ccffff;
     
 }
 /* Attribute selector */
-h3[target="date"]{
+h3[id="date"]{
     color: color-mix(in srgb, blue 45%, red 45%);
     text-align: center;
     font-family: "Rubik", sans-serif;
@@ -95,7 +85,7 @@ h3[target="date"]{
 }
 
 
-h2[target="topic"]{
+h2[id="topic"]{
     color:hsla(269, 100%, 31%, 90%);
     text-align: center;
     font-family: "Rubik", sans-serif;
