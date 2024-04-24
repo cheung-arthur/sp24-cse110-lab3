@@ -6,22 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meeting Minutes Page</title>
     <link rel="icon" type="image/png" href="media/favicon.png">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&family=Raleway:wght@300&family=Roboto:wght@100&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Very Important Meeting Minutes for Very Important Company doing Important Things</h1>
-        <h2>Topic: Brainstorming</h2>
-        <h3>Date: April 16, 2024</h3>
+    <header class="sticky">
+        <h1 id="meeting-title">Very Important Meeting Minutes</h1>
+        <h2 target="topic">Topic: Brainstorming</h2>
+        <h3 target="date">Date: April 16, 2024</h3>
+        <nav class="sticky">
+            <a id = "attendance-nav" href="#attendance">ATTENDANCE</a> 
+            <a id = "agenda-nav" href="#agenda">AGENDA</a> 
+            <a id = "actions-nav" href="#actions">ACTIONS</a>
+        </nav>
+        <hr >
     </header>
-    <nav>
-        <a href="#attendance">Attendance</a> |
-        <a href="#agenda">Agenda</a> |
-        <a href="#actions">Action Items</a>
-    </nav>
     <main>
         <section id="attendance">
             <h2>Attendance List</h2>
-            <ul>
+            <ul id="attendance-list">
                 <li>Lebron James</li>
                 <li>Barack Obama</li>
                 <li>Professor Powell</li>
@@ -39,41 +50,42 @@
                 <li>Brainstorming session for improvement</li>
             </ol>
         </section>
-        <section id="actions">
-            <h2>New Business/Upcoming Action Items</h2>
-            <ul>
-                <li>Assign development tasks</li>
-                <li>Set next meeting date</li>
-                <li>Polish <i>prototype for testing</i></li>
-            </ul>
-        </section>
-        <div>
+        <div class="summary">
             <p><strong>Summary:</strong> Today we discussed possibilities for the new features of our <b>very important app.</b></p>
             <p><strong>Unfinished Business from Last Week:</strong> None. All bases covered!</p>
             <p><strong>Whiteboard of Brainstorming:</strong></p>
         </div>
         <img src="media/whiteboard.jpg" alt="Whiteboard with diagrams from the meeting">
-        <hr>
         <details>
             <summary><b>Meeting Notes</b></summary>
-            <div>
+            <div > 
                 <p>We opened the meeting by reviewing the progress on the <em>current action items</em>. After some discussion, we moved on to reviewing <em>customer responses</em> on our prototype to see what we could improve.</p>
                 <p>Lebron suggested the idea of *insert brilliant idea here*.</p>
                 <p>Miscellaneous comments:</p>
                 <ul>
-                    <li>Elon: He needed to use the restroom.</li>
-                    <li>Lebron: He needs to come late to the next meeting because of a game.</li>
+                    <li class = "misc">Elon: He needed to use the restroom.</li>
+                    <li class = "misc">Lebron: He needs to come late to the next meeting because of a game.</li>
                 </ul>
             </div>
         </details>
-        <h4>Meeting Audio</h4>
+        <hr>   
+        <section id="actions">
+            <h2>New Business/Upcoming Action Items</h2>
+            <ul>
+                <li>Assign development tasks.</li>
+                <li>Set next meeting date</li>
+                <li>Polish <i>prototype for testing</i></li>
+            </ul>
+        </section>
+        <hr>
+        <br>
+        <h4 class = "media">Meeting Audio</h4>
         <audio controls>
-            <source src="media/meeting_audio.mp3" type="audio/mp3">
+            <source src="media/meeting_audio.mp3" type="audio/mp3" class="media">
             Your browser does not support the audio element.
         </audio>
-        <br>
-        <h4>Meeting Video</h4>
-        <video controls src="meeting_video69.mp4"></video>
+        <h4 class = "media">Meeting Video</h4>
+        <video controls src="meeting_video69.mp4" class="media"></video>
         <br>
         <br>
     </main>
