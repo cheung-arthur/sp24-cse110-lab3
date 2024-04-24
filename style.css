@@ -75,21 +75,19 @@ header{
     
 }
 /* Attribute selector */
-h3[id="date"]{
+#date{
     color: color-mix(in srgb, blue 45%, red 45%);
     text-align: center;
     font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
 }
 
 
-h2[id="topic"]{
+#topic{
     color:hsla(269, 100%, 31%, 90%);
     text-align: center;
     font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
 }
@@ -155,7 +153,7 @@ nav a{
 }
 
 #actions-nav:hover{
-    background: radial-gradient(#a0cef8, color(sRGB 0 0 1 / 0.5));
+    background: radial-gradient(#87c1f6, color(sRGB 0 0 1 / 0.5));
     font-size: larger;
     transition: 0.3s;
 }
@@ -238,4 +236,7 @@ header{
         height: 0.1cm;
 
     }
+}
+a[target="_blank"] {
+    background-color: yellow;
 }
